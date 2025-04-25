@@ -1,8 +1,13 @@
 import { Animal } from "./animal";
 export class Perro extends Animal {
-    nombreAnimal: string;
     constructor(pNombreAnimal: string) {
         super(pNombreAnimal)
+    }
+    getNombreAnimal(): string {
+        return this.nombreAnimal;
+    }
+    setNombreAnimal(pNombreAnimal: string): void {
+        this.nombreAnimal = pNombreAnimal;
     }
 
     emitirSonido(): void {

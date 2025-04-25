@@ -5,6 +5,12 @@ export abstract class Animal implements iAnimal {
     constructor(pNombreAnimal: string) {
         this.nombreAnimal = pNombreAnimal
     }
+    getNombreAnimal(){
+        return this.nombreAnimal;
+    }
+    setNombreAnimal(pNombreAnimal:string){
+        this.nombreAnimal=pNombreAnimal;
+    }
 
     emitirSonido(): void {
 
